@@ -20,14 +20,14 @@ if ( ! defined( 'ABSPATH' ) ) {
     // Exit if accessed directly
 }
 
-define( 'WPPLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'WPPLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'FDTWA_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'FDTWA_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 // Whatsapp Btn Style
 
 function fdtwa_style_and_scripts() {
 
-    wp_enqueue_style( 'fdtwa-style', WPPLUGIN_URL .  'css/style.css' );
+    wp_enqueue_style( 'fdtwa-style', FDTWA_PLUGIN_URL .  'css/style.css' );
 
 }
 add_action( 'wp_enqueue_scripts', 'fdtwa_style_and_scripts' );
@@ -35,10 +35,7 @@ add_action( 'wp_enqueue_scripts', 'fdtwa_style_and_scripts' );
 // WhatsApp Html Button
 
 function fdtwa_html_code() {
-    echo '<p><a class="wa-btn" target="_blank" href="https://wa.me/1111222333444"><img src="' . WPPLUGIN_URL . 'img/wa-icon.svg">Chatta con noi.</a></p>';
+    echo '<p><a class="wa-btn" target="_blank" href="https://wa.me/1111222333444"><img src="' . FDTWA_PLUGIN_URL . 'img/wa-icon.svg">Chatta con noi.</a></p>';
 
 }
 add_action( 'wp_footer', 'fdtwa_html_code' );
-
-
-// 'img/wa-icon.svg'
