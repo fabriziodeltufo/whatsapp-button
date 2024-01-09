@@ -14,7 +14,7 @@
 * Domain Path:       /languages
 */
 
-/* Security  */
+/* SECURITY  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
     // Exit if accessed directly
@@ -23,19 +23,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'FDTWA_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'FDTWA_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
-// Whatsapp Btn Style
 
-function fdtwa_style_and_scripts() {
+// PLUGIN FRONT END
+include (FDTWA_PLUGIN_DIR . 'frontend/wa-html-css.php');
+// include (FDTWA_PLUGIN_DIR . 'backend/wa-option.php');
+include (FDTWA_PLUGIN_DIR . 'backend/wa-menu.php');
+// include (FDTWA_PLUGIN_DIR . 'backend/wa-section.php');
+// include (FDTWA_PLUGIN_DIR . 'backend/wa-field.php');
+include (FDTWA_PLUGIN_DIR . 'backend/wa-settings.php');
 
-    wp_enqueue_style( 'fdtwa-style', FDTWA_PLUGIN_URL .  'css/style.css' );
-
-}
-add_action( 'wp_enqueue_scripts', 'fdtwa_style_and_scripts' );
-
-// WhatsApp Html Button
-
-function fdtwa_html_code() {
-    echo '<p><a class="wa-btn" target="_blank" href="https://wa.me/1111222333444"><img src="' . FDTWA_PLUGIN_URL . 'img/wa-icon.svg">Chatta con noi.</a></p>';
-
-}
-add_action( 'wp_footer', 'fdtwa_html_code' );
