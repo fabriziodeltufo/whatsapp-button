@@ -5,7 +5,7 @@
 // WA BUTTON STYLE
 function fdtwa_style_and_scripts() {
 
-    wp_enqueue_style( 'fdtwa-style', FDTWA_PLUGIN_URL .  'css/style.css' );
+    wp_enqueue_style( 'fdtwa-style', FDTWA_PLUGIN_URL .  'css/wa-style.css' );
 
 }
 add_action( 'wp_enqueue_scripts', 'fdtwa_style_and_scripts' );

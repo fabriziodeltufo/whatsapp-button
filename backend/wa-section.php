@@ -14,5 +14,5 @@ add_settings_section(
 
 
 function fdtwa_section_cb() {
-    esc_html_e( 'Insert the mobile number to call / chat and the label for the button.', 'fdtwa' );
+    esc_html_e( 'Insert the mobile number (Country Code + Number) to call / chat and the label for the button.', 'fdtwa' );
 }

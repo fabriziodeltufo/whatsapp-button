@@ -1,7 +1,7 @@
 <?php
 
 /*  -----------------------------------------------------------------------------------------------
-SETTING BUTTON LABEL
+SETTING BUTTON LABEL FIELD
 --------------------------------------------------------------------------------------------------- */
 
 function fdtwa_label_cb() {
@@ -22,7 +22,7 @@ add_settings_field(
     // Unique identifier for field
     'fdtwa_label',
     // Field Title
-    __( 'Label', 'fdtwa' ),
+    __( 'Button Label', 'fdtwa' ),
     // Callback for field markup
     'fdtwa_label_cb',
     // Page to go on
@@ -34,7 +34,7 @@ add_settings_field(
 );
 
 /*  -----------------------------------------------------------------------------------------------
-SETTING MOBILE FIELD
+SETTING MOBILE NUMBER FIELD
 --------------------------------------------------------------------------------------------------- */
 
 function fdtwa_number_cb() {
@@ -55,7 +55,7 @@ add_settings_field(
     // Unique identifier for field
     'fdtwa_number',
     // Field Title
-    __( 'Mobile No.', 'fdtwa' ),
+    __( 'Mobile Number', 'fdtwa' ),
     // Callback for field markup
     'fdtwa_number_cb',
     // Page to go on

@@ -7,11 +7,10 @@
 if ( !get_option( 'fdtwa_mobile' ) ) {
     add_option( 'fdtwa_mobile' ) ;
     $options = array(
-        'number' => '1111222333444',
-        'label' => 'Call'
+        'number' => '+112233445566',
+        'label' => 'Call Now !'
     );
 
     update_option( 'fdtwa_mobile', $options );
 
 }
-
