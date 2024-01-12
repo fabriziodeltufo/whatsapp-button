@@ -2,7 +2,7 @@
 /*
 * Plugin Name:       WhatsApp Button
 * Plugin URI:        https://wewebby.gumroad.com/
-* Description:       WhatsApp Button in footer.
+* Description:       WhatsApp Button in bottom page position.
 * Version:           1.0.0
 * Requires at least: 6.4.2
 * Requires PHP:      7.4.33
